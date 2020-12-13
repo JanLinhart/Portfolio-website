@@ -335,6 +335,7 @@ nav ul li a:hover{
     }
     .progress-bar{
         width:20rem;
+        height:2.5rem;
     }
    .skillset{
      display: flex;  
@@ -395,12 +396,8 @@ nav ul li a:hover{
        
         
     }
-    .progress-text{
-        bottom: 5px;
-        font-size:0.8rem;
-        
-       
-    }
+    
+    
   
   
    
