@@ -1,0 +1,401 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+   
+
+    
+    
+    
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#particles-js{
+    position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color:white;
+  background-size: cover;
+  
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  top: 0;
+  
+}
+
+nav{
+    display: flex;
+    position:absolute;
+    color:black;
+    justify-content:space-between;
+    height:90px;
+    width:100%;
+    align-items:center;
+    z-index:10;
+} 
+nav i{
+    padding: 3rem;
+    font-size:2rem;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    margin-right: 10%;
+    
+}
+nav ul li{
+    margin-right: 30px;
+    font-weight:1000;
+    
+}
+nav ul li a{
+    cursor:pointer;
+    position:relative;
+    padding-bottom:5px;
+    color:black;
+    text-decoration: none;
+}
+nav ul li a::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px;
+    background-color: black;
+    transition: ease-in 0.3s;
+    transform: scaleX(0);
+    transform-origin: center;
+    
+}
+nav ul li a:hover::before{
+
+    transform: scaleX(1);
+}
+nav ul li a:hover{
+
+    color:#4682B4;
+}
+
+ .hero-content{
+    position: absolute;
+    top:150px;
+    left:200px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    font-size:2rem;
+    z-index:10;
+}
+.hero-content h1{
+    font-weight: 800;
+    
+}
+.hero-content h3{
+    font-size: 1rem;
+    text-shadow: none;
+}
+.about{
+    position: absolute;
+    top:600px;
+    max-width: 70%;
+    height:100vh;
+    z-index:10;
+    text-align: center;
+    
+    
+    
+}
+.ab{
+    display: flex;
+    justify-content: center;
+}
+.about h1{
+    text-align: center;
+}
+.about .code-box{
+    background-color: #1B1B1B;
+    max-width:100%;
+    max-height:50%; 
+    border-radius: 6px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    padding:5px;
+}
+.code-box p{
+    color:white;
+    font-weight: 800;
+    
+    
+}
+.about h1{
+    font-size:3rem;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    align-self: right;
+}
+.skillset{
+    position:absolute;
+    z-index:10;
+    top:1100px;
+    
+    
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    
+    
+}
+.skill{
+    display: flex;
+    justify-content: center;
+}
+.skillset h1{
+    font-size:3rem;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    margin-bottom: 100px;
+}
+
+.progress-bar{
+    width:60rem;
+    height:2rem;
+    border-radius:3rem;
+    box-shadow: 2px 2px 1px #555454;
+    position: relative;
+    margin-bottom: 20px;
+    display:flex;
+    align-items: center;
+    color:white;
+
+    
+}
+
+.progress-bar svg{
+    font-size:1.5rem;
+    z-index: 100;
+    
+    
+    
+}
+.progress-text{
+    position:absolute;
+    left:1rem;
+    font-weight: 800;
+    z-index: 50;
+   
+}
+.progress-text span{
+  margin:0.5rem;
+   
+}
+.progress-percent{
+    width:0;
+    height:100%;
+    background-color:#4682B4;
+    opacity: 0.7;
+    border-radius:3rem;
+    transition: width 0.8s 0.8s ease-in-out;
+    z-index:10;
+}
+.projects{
+    position:absolute;
+    z-index: 10;
+    width:100%;
+    top:1800px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+   
+    
+    
+}
+.projects .project img{
+    position: relative;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  overflow:visible;
+    width:40%;
+    height:100%;
+    
+    
+}
+
+.projects .project img:hover{
+    opacity:0.8;
+    
+    cursor:pointer;
+}
+.projects .project:not(.reverse){
+    margin-bottom: 120px;
+    display: flex;
+    
+    margin-left:15%;
+   
+}
+.projects h1{
+    font-size:3rem;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    margin-bottom: 150px;
+}
+.projects .project .code-box{
+    position: absolute;
+    background-color: #1B1B1B;
+    overflow:visible;
+    height:5%; 
+    border-radius: 6px;
+    margin-top:50px;
+    padding:5px;
+    color: white;
+    font-weight:800;
+    z-index: 50;
+    right:6%;
+    width:25%;
+    opacity:0.9;
+
+    
+}
+.projects .reverse .code-box{
+    left:6%;
+}
+.projects .reverse{
+    margin-right:15%;
+    margin-bottom: 120px;
+    display: flex;
+}
+
+
+
+.contact{
+    z-index:10;
+    position: absolute;
+    top:3700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    font-weight:800;
+}
+.contact i{
+    color:#4682B4;
+}
+.contact .platforms{
+    font-size: 2rem;
+}
+.contact i:not(.platforms){
+    font-size: 2rem;
+    margin:3px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+  
+}
+::-webkit-scrollbar {
+    width: 20px;
+    cursor: pointer;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4682B4; 
+    border-radius: 10px;
+  }
+  nav .menu{
+      display: none;
+  }
+
+@media(max-width:768px){
+    nav ul{
+        flex-direction: column;
+    }
+    .hero-content{
+        left:10%;
+        bottom: 50%;
+    }
+    .progress-bar{
+        width:20rem;
+    }
+   .skillset{
+     display: flex;  
+    align-items: center;
+   }
+    .contact{
+        top:3400px;
+        text-align: center;
+    }
+    .projects .project .code-box{
+        height:8%;
+        width:50%;
+    }
+    .skillset{
+        top:1200px;
+    }
+    .projects{
+        top:1900px;
+    }
+    .projects .project img{
+        width:70%;
+    }
+    .nav-active{
+        transform: translateY(0%);
+    }
+    .nav-passive{
+        transform: translateY(-3000%);
+    }
+
+    nav ul{
+        
+        display:flex;
+        flex-direction:column;
+        height:300px;
+        background-color:#4682B4;
+        color:white;
+        justify-content:space-around;
+        align-items: center;
+        right:0px;
+        top:0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        z-index: 1000;
+        width:150%;
+        transform: translateY(-110%);
+        position: fixed;
+        transition: transform 0.5s ease-in;
+        border-bottom: 3px black solid;
+    }
+   
+    .hero-content{
+        z-index: 1;
+    }
+    nav .menu{
+        display:flex;
+        margin-left: 10px;
+        z-index: 1020;
+       
+        
+    }
+   
+  
+   
+    
+}
+  
+  
+ 
