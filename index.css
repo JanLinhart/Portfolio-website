@@ -187,6 +187,7 @@ nav ul li a:hover{
     left:1rem;
     font-weight: 800;
     z-index: 50;
+    
    
 }
 .progress-text span{
@@ -390,6 +391,10 @@ nav ul li a:hover{
         z-index: 1020;
        
         
+    }
+    .progress-text{
+       margin-bottom: 5%;
+       
     }
    
   
