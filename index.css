@@ -341,7 +341,7 @@ nav ul li a:hover{
     align-items: center;
    }
     .contact{
-        top:450%;
+        top:450vh;
         text-align: center;
     }
     .projects .project .code-box{
