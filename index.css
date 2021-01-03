@@ -113,9 +113,11 @@ nav ul li a:hover{
 .ab{
     display: flex;
     justify-content: center;
+   
 }
 .about h1{
     text-align: center;
+   
 }
 .about .code-box2{
     background-color: #1B1B1B;
@@ -131,6 +133,7 @@ nav ul li a:hover{
     0 100px 80px rgba(0, 0, 0, 0.12);
     padding:5px;
     color:white;
+    
 }
 .code-box p{
     color:white;
@@ -402,12 +405,13 @@ nav ul li a:hover{
     }
     nav .menu{
         display:flex;
-        margin-left: 10px;
+        margin-left: 50px;
         z-index: 1020;
+        
        
         
     }
-    
+   
     
   
   
