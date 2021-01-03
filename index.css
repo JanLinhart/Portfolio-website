@@ -399,6 +399,16 @@ nav ul li a:hover{
         transition: transform 0.5s ease-in;
         border-bottom: 3px black solid;
     }
+    .about{
+        z-index:1;
+    }
+    .skillset{
+        z-index:1;  
+    }
+    .projects{
+        z-index:1;  
+    }
+   
    
     .hero-content{
         z-index: 1;
